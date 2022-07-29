@@ -1,0 +1,98 @@
+.header {
+  align-items: center;
+}
+.header > * {
+  margin-right: 10px;
+}
+
+.container-title {
+  font-size: 16px;
+}
+
+.font-42 {
+  font-size: 42px;
+}
+
+.font-12 {
+  font-size: 12px;
+}
+
+.container {
+  width: calc(100% - 48px);
+
+  padding: 14px;
+  margin: 10px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+}
+
+.main-container {
+  width: calc(100% - 20px);
+  background-color: #E3EDFD;
+
+  display:flex;
+  flex-direction: column;
+  border-radius: 24px;
+
+  padding: 10px;
+
+  align-items: center;
+}
+
+.space {
+  width: 100%;
+  margin: 0;
+}
+.f-column {
+  display:flex;
+  flex-direction: column;
+}
+
+.f-row {
+  display:flex;
+  flex-direction: row;
+}
+.f-space-between {
+  justify-content: space-between;
+}
+
+.f-space-around {
+  justify-content: space-around;
+}
+
+.f-end {
+  justify-content: end;
+}
+
+html, body {
+  margin: 0px;
+
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+} 
+body * {
+  color: #000000;
+  font-family: 'Roboto Mono';
+  font-size: 14px;
+}
+
+::-webkit-scrollbar
+{
+  display: none;
+  /* width: 8px;
+  background-color: #ffffff00; */
+}
+
+::-webkit-scrollbar-track
+{
+  border-radius: 10px;
+  background-color: #ffffff00;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  background-color: #8BABDF;
+}

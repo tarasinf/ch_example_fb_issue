@@ -1,0 +1,49 @@
+{
+    "name": "CE name",
+    "description": "...",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "action": {},
+    "permissions": [
+        "activeTab",
+        "storage",
+        "scripting",
+        "tabs",
+        "identity",
+        "identity.email"
+    ],
+    "content_scripts": [
+      {
+        "matches": [
+            "https://*/*",
+            "http://*/*"
+        ],
+        "js": ["side-panel.js"]
+      }
+    ],
+    "icons": {
+      "16": "/images/get_started16.png",
+      "32": "/images/get_started32.png",
+      "48": "/images/get_started48.png",
+      "128": "/images/get_started128.png"
+    },
+    "web_accessible_resources": [
+      {
+        "resources": ["popup.html" ],
+        "matches": ["https://*/*", "http://*/*"],
+        "extension_ids": [""]
+      }
+    ],
+    "oauth2": {
+      "client_id": "",
+      "scopes": [
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://www.googleapis.com/auth/userinfo.profile"
+      ]
+    },
+    "key": ""    
+  }
